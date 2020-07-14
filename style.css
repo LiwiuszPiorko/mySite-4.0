@@ -1,0 +1,471 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    height: 10Vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.menu a{
+    margin: 5px;
+    padding: 5px;
+    flex-basis: 20%;
+    font-family: 'Teko',sans-serif ;
+    font-size: 3vw;
+    text-align: center;
+    color: ghostwhite;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu a:hover{
+    color:#296326;
+}
+.welcome{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.vc{
+    width: 90%;
+    height: 90%;
+    display: flex;
+}
+.vc img{
+    width: 50%;
+    height: 100%;
+    align-self: center;
+}
+.vc .description{
+    width: 50%;
+    height: 100%;
+}
+.vc .description h1{
+    font-family: 'Teko',sans-serif ;
+    font-size: 4vw;
+    color: #296326;
+}
+.vc .description p{
+    font-family: 'Teko',sans-serif ;
+    font-size: 2vw;
+    font-weight: 300;
+    color: ghostwhite;
+    text-align: justify;
+}
+.menuSection{
+    display: none;
+}
+.active{
+    z-index: 1;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    display: block;
+    font-size: 2vw;
+    color: #d49d06;
+    cursor: pointer;   
+}
+.title{
+    font-family: 'Teko',sans-serif ;
+    font-size: 3vw;
+    color: ghostwhite;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #296326;
+
+}
+.tech{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;   
+}
+.tech .item{
+    flex-basis: 23%;
+    font-size: 12vw;
+    color: ghostwhite;
+    text-align: center;
+}
+.portfolio{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.portfolio h1{
+    padding: 0.5em;
+    font-family: 'Teko',sans-serif ;
+    font-size: 2vw;
+    color: ghostwhite;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+}
+.sites{
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.site{
+    flex-basis: 30%;
+    height: 80%;
+    position: relative;
+    background-color: #296326;
+}
+.site:nth-child(1){
+    background-image: url(img/karate-1343889_1920.jpg);
+    background-size: cover;
+}
+.site:nth-child(2){
+    background-image: url(img/IMG_20180821_140529994_2.jpg);
+    background-size: cover;
+}
+.site:nth-child(3){
+    background-image: url(img/concept-3253680_1920.jpg);
+    background-size: cover;
+}
+.descript{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0, 0,0, 0.8);
+}
+.descript h2{
+    font-family: 'Teko',sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    color: ghostwhite;
+}
+.descript a{
+    font-family: 'Teko',sans-serif ;
+    font-size: 1.5vw;
+    color: #296326;
+    text-decoration: none;
+
+}
+.projects{
+    height: 150vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.project{
+    flex-basis: 30%;
+    height: 30%;
+    position: relative;
+    background-color: #296326;
+
+}
+.project:nth-child(1){
+    background-image: url(img/store-984393_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(2){
+    background-image: url(img/halloween-959006_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(3){
+    background-image: url(img/adventure-2528477_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(4){
+    background-image: url(img/piano-1377491_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(5){
+    background-image: url(img/toys-2561392_1280\ \(1\).jpg);
+    background-size: cover;
+}
+.project:nth-child(6){
+    background-image: url(img/clock-1451035_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(7){
+    background-image: url(img/money-4641212_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(8){
+    background-image: url(img/casserole-dish-2776735_1920.jpg);
+    background-size: cover;
+}
+.project:nth-child(9){
+    background-image: url(img/forklift-835340_1920.jpg);
+    background-size: cover;
+}
+.motto{
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+.myMotto{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.myMotto h1{
+    font-family: 'Teko',sans-serif;
+    font-size: 9vw;
+    font-weight: 700;
+    color: #296326;
+}
+.myMotto p{
+    font-family: 'Teko',sans-serif;
+    font-size: 4vw;
+    font-weight: 300;
+    text-align: justify;
+    color: ghostwhite;
+}
+.hobby{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+.hobbyItem{
+    flex-basis: 50%;
+    height: 50%;
+    position: relative;
+}
+.hobbyItem:nth-child(1){
+    background-image: url(img/book-933280_1920.jpg);
+    background-size: cover;
+}
+.hobbyItem:nth-child(2){
+    background-image: url(img/bustos-756620_1920.jpg);
+    background-size: cover;
+}
+.hobbyItem:nth-child(3){
+    background-image: url(img/portrait-3163518_1920.jpg);
+    background-size: cover;
+}
+.hobbyItem:nth-child(4){
+    background-image: url(img/movie-918655_1920.jpg);
+    background-size: cover;
+}
+.hobbyItem h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Teko',sans-serif;
+    font-size:6vw;
+    text-transform: uppercase;
+    color: ghostwhite;
+}
+.wrapper{
+    height: 50vh;
+    display: flex;
+
+}
+.links{
+    flex-basis: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Teko',sans-serif;
+    color: ghostwhite;
+    text-transform: uppercase;
+  
+}
+.linksDiv{
+    flex-basis: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  
+}
+.link{
+    font-size: 2vw;
+}
+.link>a{
+    text-decoration: none;
+    color: ghostwhite;
+}
+.link span{
+    padding: 0.5em;
+}
+.form{
+    display: flex;
+    flex-basis: 50%;
+    background-color: black;
+    color: ghostwhite;
+    justify-content: center;
+    align-items: center;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+form>button{
+    width: 70%;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-family: 'Teko',sans-serif;
+    font-weight: 700;
+    font-size: 1vw;
+    background-color: black;
+    color: ghostwhite;
+}
+form>input{
+    width: 70%;
+    height: 15%;
+    margin: 0.5em;
+    font-size: 1vw;
+    font-family: 'Teko',sans-serif;
+    text-align: center;
+}
+form>textarea{
+    width: 70%;
+    height: 80%;
+    font-size: 1vw;
+    font-family: 'Teko',sans-serif;
+    text-align: center;
+}
+/* respons */
+@media(orientation:portrait){
+.menu a{
+    font-size: 5vw;
+
+}
+.vc{
+    flex-direction: column;
+}
+.vc img{
+    width: 100%;
+    height: 50%;
+}
+.vc .description{
+    width: 100%;
+    height: 50%;
+}
+.vc .description h1{
+    font-size: 9vw;
+    text-align: center;
+}
+.vc .description p{
+    font-size: 5vw;
+    margin:0.5em;
+}
+.welcome .menuSection{
+    font-size: 7vw;
+}
+.title{
+    font-size: 6vw;
+}
+.tech{
+    flex-direction: column;
+}
+.tech .item{
+    font-size: 22vw;
+
+}
+.portfolio{
+    height: 410vh;
+}
+.portfolio h1{
+    font-size: 4vw;
+}
+.sites{
+    height: 100vh;
+    flex-direction: column;
+}
+.site{
+    width: 80%;
+}
+.projects{
+    height: 300vh;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.project{
+    width: 80%;
+    flex-basis: 10%;
+}
+.descript h2{
+    font-size: 5vw;
+}
+.descript a{
+    font-size:5vw;
+}
+.myMotto h1{
+    font-size: 16vw;
+}
+.myMotto p{
+    font-size: 6vw;
+}
+.hobby{
+    height: 150vh;
+    flex-direction: column;
+}
+.hobbyItem{
+    width: 100%;
+    flex-basis: 25%;
+}
+.hobbyItem h1{
+    font-size:8vw;
+}
+.wrapper{
+    height: 100vh;
+    flex-direction: column;
+}
+.links{
+    flex-basis: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;  
+}
+.linksDiv{
+    flex-basis: 100%;
+    height: 20%;
+    flex-direction: row;
+    justify-content: center;
+}
+.link{
+    font-size: 4vw;
+}
+.form{
+    flex-basis: 100%;
+    height: 90vh;
+}
+form>button{
+    width: 90%;
+    font-size: 4vw;
+}
+form>input{
+    width: 90%;
+    font-size: 4vw;
+
+}
+form>textarea{
+    width: 90%;
+    font-size: 4vw;
+}
+
+}
+
+
+
+
+
+
